@@ -13,10 +13,10 @@ def print_n(s,n):
     print_n(s,n-1)
 
 def run():
-  n = int(input("Enter an int: "))
-  print(f"sum is {sum_n(n)}.")
+  num = int(input("Enter an int: "))
+  print(f"sum is {sum_n(num)}.")
   sen = input("Enter a string: ")
-  print_n(sen,n)
+  print_n(sen,num)
 
 if __name__ == "__main__":
   run() 
