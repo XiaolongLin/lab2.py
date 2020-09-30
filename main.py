@@ -1,25 +1,14 @@
-
-def sum_n(n):
-  if n<=0:
-    return 0;
-  else:
-    sum = n + sum_n(n-1)
-    return sum
-def print_n(s,n):
-  if n==0:
-    return 0
-  else:
-    print(s)
-    print_n(s,n-1)
-
-def run():
-  num = int(input("Enter an int: "))
-  print(f"sum is {sum_n(num)}.")
-  sen = input("Enter a string: ")
-  print_n(sen,num)
-
-if __name__ == "__main__":
-  run() 
+temp = input("Enter temperature: ")
+unit = input ("Enter unit in F/f or C/c: ")
+temp = float(temp)
+if unit == "F" or "f":
+  c = (temp-32)/1.8
+  print(str(temp)+"° in Fahrenheit is equivalent to "+str(c)+"° Celsius.")
+elif unit == "C" or "c":
+  f = temp*1.8+32
+  print(str(temp)+"° in Celsius is equivalent to" +str(f)+"° Fahrenheit.")
+else:
+  print(f"Invalid unit(bad).") 
       
 
  
