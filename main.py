@@ -8,6 +8,7 @@ elif unit == "C" or "c":
   f = temp*1.8+32
   print(str(temp)+"° in Celsius is equivalent to" +str(f)+"° Fahrenheit.")
 else:
+  bad = unit
   print(f"Invalid unit(bad).") 
       
 
